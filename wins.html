@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		body{
+			/*background-image: url("snd.JPG");*/
+			background-color: #fefefe;
+			background-repeat: no-repeat, repeat;
+			max-width: 700px;
+			/*height: 1000px;*/
+			border: 5px;
+			border-color: blue;
+			align-content: center;
+			margin: 0 auto;
+			image-orientation: from-image;
+			overflow: scroll;
+
+			/*background-color: black;*/
+		} 
+		.dos{
+			background-color: #D9D9D9;
+			text-decoration-color: white;
+			color: black;
+			text-align: center;
+			border-radius: 20px;
+			width: 300px;
+			height: 180px;
+			font-size: 25px;
+			margin-left: 50px;
+		}
+		.fol{
+			font-size: 30px;
+			color: black;
+
+		}
+		.links{
+			font-size: 20px;
+			font-style: italic;
+
+		}
+		.butt {
+  border: none;
+  color: white;
+  background-color: black;
+  padding: 25px 32px;
+  text-align: center;
+  text-decoration: none;
+  text-decoration-color: white;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+  float: right;
+  
+}
+
+.menus a {
+  float: left;
+  margin-left: 80px;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+
+
+}
+.log{
+	 font-size: 40px;
+	 font-weight: bold;
+	 color: black;
+}
+.txt{
+
+	font-size: 25px;
+	font-weight: bold;
+	margin-left: 50px;
+	margin-top:px;
+}
+.imgs{
+	width: 200px;
+	height: 100px;
+	margin-left: 300px;
+	margin-top: 1px;
+}
+/*.how{
+	
+	background-image: url(snd.JPG);
+	height: 700px;
+	width: 700px;
+}*/
+.im{
+	border-radius: 30px;
+	width: 200px;
+	height: 200px;
+	margin-right: 1px;
+	margin-left: 50px;
+	align-self: ce0nter;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;}
+  table, th, td {
+  border: 1px ;
+}
+
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+input[type=password]{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+/* Style the container */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.min {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.gan {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .min .gan, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+
+	</style>
+		<script>
+/*function validateForm() {
+  let fil = document.forms["formu"]["firstname"].value;
+  if (fil == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}*/
+
+function validateform(){  
+var firstname=document.formu.firstname.value;  
+var last=document.formu.last.value;
+var email=document.formu.email.value;  
+var pass=document.formu.pass.value;  
+var confirm=document.formu.confirm.value;   
+  
+if (firstname==null || firstname==""){  
+  alert("Name can't be blank");  
+  return false;  
+}
+else if(email==null || email==""){  
+  alert("Please E-mail is required");  
+  return false;  
+  } 
+else if(pass.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }
+  else if(confirm=!pass){  
+  alert("Password miss match.");  
+  return false;  
+  }   
+}  
+
+</script>
+</head>
+<body>
+
+	
+	<div>
+		<div class="log">RBYZ Shop </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<!--<div class="menus">-->
+			<div class="menus">
+			<a class="act" href="tamp.html">Home</a>
+			<a href="abt.html">About</a>
+			<a href="serv.html">Services</a>
+			<a href="cont.html">Contacts</a>
+		</div>
+	
+		<br><br>
+		<div class="container">
+  <form name="formu" action="action_page.php" onsubmit="return validateform()" >
+  	<h2>Create an Account</h2>
+    <div class="row">
+      <div class="min">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="gan">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="min">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="gan">
+        <input type="text" id="lname" name="last" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="min">
+        <label for="country">Email</label>
+      </div>
+      <div class="gan">
+        <input type="text" id="emel" name="email" placeholder="Your Email..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="min">
+        <label for="subject">Password</label>
+      </div>
+     <div class="gan">
+        <input type="password" id="password" name="pass" placeholder="Your Password..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="min">
+        <label for="subject">Confirm Password</label>
+      </div>
+     <div class="gan">
+        <input type="password" id="conf" name="confirm" placeholder="Your Password again..">
+      </div>
+    <div class="row">
+      <input type="submit" value="Sign Up">
+    </div>
+  </form>
+</div>
+	
+<footer class="footer">&copy;RBYZ Shop</footer>
+</body>
+</html>

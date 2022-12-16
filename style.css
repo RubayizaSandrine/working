@@ -1,0 +1,162 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+
+}
+ul{
+	list-style: none;
+}
+.header{
+	width: 100%;
+	height: 60vh;
+	background-color: #fff;
+	position: relative;
+}
+.header .navig{
+	width: 100%;
+	height: 80px;
+	display: flex;  
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	margin-top: 30px;
+}
+.menu ul li{
+	display: inline-block;
+	padding: 0 30px;
+	cursor: pointer;
+	font-size: 19px;
+	font-weight: 700;
+	line-height: 80px;
+	align-items: center; 
+
+
+}
+.loginbut{
+	display: block;
+	font-size: 19px;
+	font-weight: 700;
+	cursor: pointer;
+	border-radius: 30px;
+	background-color: #bdbd;   
+	padding: 8px 40px;
+	margin-right: 100px;
+} 
+.banner{
+	width: 80%;
+	height: 70%;
+	position: absolute;
+	top: 25%;
+	left: 150px;
+	color: #fff;
+}
+.textap{
+	width: 50%;
+	float: left;
+	padding-left: 50px;
+
+}
+.textap h3{
+	margin-top: 100px;
+	font-size: 17px;
+	color: #000;
+	font-weight: 2px;
+	text-transform: uppercase;
+}
+.textap h1{
+	font-size: 51px;
+	position: relative;
+	color: #000;
+	margin-top: 30px;
+	font-weight: 700;
+	line-height: 1;
+}
+.textap p{
+	font-size: 19px;
+	margin: 30px 30px 30px 0;
+	letter-spacing: 1px;
+	color: #000;
+	padding-right: 250px;
+}
+.grop{
+	display: flex;
+	width: 100%;
+	position: relative;
+}
+.grop .signup{
+	cursor: pointer;
+	display: block;
+	color: #000;
+	text-align: center;
+	font-size: 15px;
+	font-weight: 700;
+	border-radius: 32px;
+	background-color: #ffa037;
+	padding: 15px 50px;
+}
+.grop .play{
+	margin-left: 40px;
+	display: inline-flex;
+}
+.grop span{
+	color: #000;
+	font-size: 15px;
+	font-weight: 700;
+	margin-top: auto 20px;
+	cursor: pointer;
+
+
+}
+.playin{
+	height: 50px;
+	width: 50px;
+	border-radius: 2px solid transparent;
+	border-radius: 50%;
+	background-color: #000;
+
+}
+.playin i{
+	padding: 15px 19px;
+	font-size: 16px;
+	cursor: pointer;
+
+}
+.service{
+	position: absolute;
+	top: 160%;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+	padding: 0 300px;
+}
+.service ul{
+	display: inline-flex;
+	margin: 30px auto;
+	text-align: center;
+}
+.service ul li{
+	margin: 0 50px;
+	cursor: pointer;
+}
+.service ul li img{
+	width: 120px;
+	height: auto;
+}
+.service ul li h1{
+	font-size: 20px;
+	margin-top: 20px;
+}
+.service ul li p{
+	font-size: 15px;
+	margin-top: 20px;
+	font-weight: 700;
+}
+.pic img{
+	width: 50%;
+	height: auto;
+
+}
